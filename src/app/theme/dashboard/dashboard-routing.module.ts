@@ -5,10 +5,18 @@ const routes: Routes = [
   {
     path: '',
     data: {
-      title: 'Dashboard',
+      title: 'Home',
       status: false
     },
     children: [
+      {
+        path: 'subject',
+        loadChildren: './subject/subject.module#SubjectModule'
+      },
+      {
+        path: 'diary',
+        loadChildren: './diary/diary.module#DiaryModule'
+      },
       {
         path: 'default',
         loadChildren: './default/default.module#DefaultModule'

@@ -9,7 +9,7 @@ const routes: Routes = [
     data: {
       title: 'Default Dashboard',
       icon: 'icon-home',
-      caption: 'lorem ipsum dolor sit amet, consectetur adipisicing elit',
+      caption: 'this is caption for default dashboard - shekhar',
       status: true
     }
   }
