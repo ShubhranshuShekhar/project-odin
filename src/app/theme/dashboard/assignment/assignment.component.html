@@ -1,3 +1,61 @@
-<p>
-  assignment works!
-</p>
+<div class="page-body">
+  <!-- Row1 begins -->
+  <div class="row">
+    <!-- First Div - contains all subject -->
+    <div class="col-xl-12 col-md-12">
+      <!-- here comes the table -->
+      <!-- Extra small table start-->
+    <app-card [title]="'Physics Assignments'" [classHeader]="true" [blockClass]="'table-border-style'" [cardOptionBlock]="true">
+        <div class="row card-block">
+            <span>Put some good fucking filters here - user need not go from here to return to same place</span>>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-xs">
+            <thead>
+            <tr>
+              <th>#</th>
+              <th>Date</th>
+              <th>Type</th>
+              <th>Description</th>
+              <th>Status</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>21-Jan-18</td>
+              <td>HomeWork</td>
+              <td>Write essay on pig</td>
+              <td>Complete</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>21-Jan-18</td>
+              <td>Classwork</td>
+              <td>Learn some new words</td>
+              <td>Complete</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>21-Jan-18</td>
+              <td>Extra</td>
+              <td>the Bird</td>
+              <td>Complete</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </app-card>
+    </div>
+
+<!-- Don't put any more divs here -->
+
+
+  <!-- Second Div there is no more scope -->
+
+  <!-- Row1 Ends -->
+</div>
+<!-- End of page-body -->
+</div>
