@@ -1,19 +1,243 @@
 <div class="page-body">
   <!-- Row1 begins -->
   <div class="row">
-      <div class="col-xl-4 col-lg-12 col-sm-12">
+
+    <!-- user start -->
+    <div class="col-xl-6 col-md-12">
+      <!-- <div class="col-xl-4 col-md-12 col-sm-12"> -->
+      <div class="card user-card-full">
+        <div class="row m-l-0 m-r-0">
+          <div class="col-sm-4 bg-c-purple user-profile">
+            <div class="card-block text-center text-white">
+              <div class="m-b-25">
+                <img src="assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
+              </div>
+              <h6>Jeny William</h6>
+              <p>Physics Faculty</p>
+              <p>BSc Science from XYZ University</p>
+              <i class="fa fa-pencil-square-o m-t-10 f-16"></i>
+            </div>
+          </div>
+
+          <div class="col-sm-8">
+            <div class="row card-block">
+              <!-- <div class="col-md-12 col-lg-4"> -->
+              <h6 class="sub-title">Current Syllabus</h6>
+              <ul class="basic-list">
+                <li class="">
+                  <h6>Heading</h6>
+                  <p>Laborum nihil aliquam nulla praesentium illo libero nihil at odio maxime.</p>
+                </li>
+                <li class="">
+                  <h6>Heading</h6>
+                  <p>Laborum nihil aliquam nulla praesentium illo libero nihil at odio maxime.</p>
+                </li>
+                <li class="">
+                  <h6>Heading</h6>
+                  <p>Laborum nihil aliquam nulla praesentium illo libero nihil at odio maxime.</p>
+                </li>
+
+              </ul>
+
+              <button class="btn btn-primary btn-round waves-light" mdbRippleRadius>Complete Syllabus</button>
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
     </div>
 
-    <div class="col-xl-4 col-lg-12 col-sm-12">
-    </div>
+    <!-- Score -->
+    <div class="col-xl-3 col-md-6">
+        <app-card [title]="'Test Score'" [cardClass]="'trafic-card'">
+          <p class="m-b-10">Terminal 1 <span class="f-right"><i class="fa fa-caret-up m-r-10"></i>45</span></p>
+          <div class="progress blue">
+            <div class="progress-bar bg-c-blue" [style.width]="'75%'"></div>
+          </div>
+          <p class="m-b-10 m-t-30">Terminal 2 <span class="f-right"><i class="fa fa-caret-down m-r-10"></i>28</span></p>
+          <div class="progress green">
+            <div class="progress-bar bg-c-green" [style.width]="'50%'"></div>
+          </div>
+          <p class="m-b-10 m-t-30">Unit Test 1 <span class="f-right"><i class="fa fa-caret-up m-r-10"></i>10</span></p>
+          <div class="progress red">
+            <div class="progress-bar bg-c-red" [style.width]="'20%'"></div>
+          </div>
+          <p class="m-b-10 m-t-30">Unit Test 2 <span class="f-right"><i class="fa fa-caret-down m-r-10"></i>58</span></p>
+          <div class="progress yellow">
+            <div class="progress-bar bg-c-yellow" [style.width]="'40%'"></div>
+          </div>
 
-    <div class="col-xl-4 col-lg-12 col-sm-12">
-        <app-card [title]="'New Users'">
-          <chart id="new-user-chart" [type]="'doughnut'" [data]="newUserData" [options]="newUserOption" [style.margin-top]="'-20px'"></chart>
+          <button class="btn btn-primary btn-round waves-light" mdbRippleRadius>All Test Score</button>
         </app-card>
       </div>
 
 
-    <!-- End of Row1 -->
+<!--  This is todo list -->
+    <div class="col-xl-3 col-md-12 col-sm-12">
+      <app-card [title]="'Assignments'" [blockClass]="'widget-last-task'">
+        <div class="to-do-list">
+          <div class="checkbox-fade fade-in-default">
+            <label class="check-task">
+              <input type="checkbox" value="" appToDoListRead>
+              <span class="cr">
+                <i class="cr-icon fa fa-check txt-default"></i>
+              </span>
+              <span>Check your Email</span>
+            </label>
+          </div>
+          <div class="f-right">
+            <a href="javascript:" class="delete_todolist" appToDoListRemove>
+              <i class="fa fa-trash"></i>
+            </a>
+          </div>
+        </div>
+        <div class="to-do-list">
+          <div class="checkbox-fade fade-in-default">
+            <label class="check-task done-task">
+              <input type="checkbox" value="" checked appToDoListRead>
+              <span class="cr">
+                <i class="cr-icon fa fa-check txt-default"></i>
+              </span>
+              <span>Make YouTube Video</span>
+            </label>
+          </div>
+          <div class="f-right">
+            <a href="javascript:" class="delete_todolist" appToDoListRemove>
+              <i class="fa fa-trash"></i>
+            </a>
+          </div>
+        </div>
+        <div class="to-do-list">
+          <div class="checkbox-fade fade-in-default">
+            <label class="check-task">
+              <input type="checkbox" value="" appToDoListRead>
+              <span class="cr">
+                <i class="cr-icon fa fa-check txt-default"></i>
+              </span>
+              <span>Create Banner</span>
+            </label>
+          </div>
+          <div class="f-right">
+            <a href="javascript:" class="delete_todolist" appToDoListRemove>
+              <i class="fa fa-trash"></i>
+            </a>
+          </div>
+        </div>
+        <div class="to-do-list">
+          <div class="checkbox-fade fade-in-default">
+            <label class="check-task">
+              <input type="checkbox" value="" appToDoListRead>
+              <span class="cr">
+                <i class="cr-icon fa fa-check txt-default"></i>
+              </span>
+              <span>Upload Project</span>
+            </label>
+          </div>
+          <div class="f-right">
+            <a href="javascript:" class="delete_todolist" appToDoListRemove>
+              <i class="fa fa-trash"></i>
+            </a>
+          </div>
+        </div>
+
+        <button class="btn btn-primary btn-round waves-light" mdbRippleRadius>Complete List</button>
+      </app-card>
+    </div>
+
+
+
+
+  <!-- <div class="col-xl-4 col-lg-12 col-sm-12">
+        <app-card [title]="'New Users'">
+          <chart id="new-user-chart" [type]="'doughnut'" [data]="newUserData" [options]="newUserOption" [style.margin-top]="'-20px'"></chart>
+        </app-card>
+      </div> -->
+
+
+
+
+
+
+
+  <!-- End of Row1 -->
+
+
+
+
+
+
+
+
+</div>
+<!-- Row2 begins -->
+<div class="row">
+  <div class="col-xl-4 col-md-12 col-sm-12">
   </div>
+
+  <!-- Classwork -->
+  <div class="col-xl-4 col-md-12 col-sm-12">
+    <div class="card">
+      <div class="card-header">
+        <h5>Class Work</h5>
+      </div>
+      <div class="card-block">
+        <chart id="new-user-chart" [type]="'doughnut'" [data]="newUserData" [options]="newUserOption" [style.margin-top]="'-20px'"></chart>
+      </div>
+      <div class="card-footer ">
+        <div class="row text-center b-t-default">
+          <div class="col-4 b-r-default m-t-15">
+            <h5>85%</h5>
+            <p class="text-muted m-b-0">Satisfied</p>
+          </div>
+          <div class="col-4 b-r-default m-t-15">
+            <h5>6%</h5>
+            <p class="text-muted m-b-0">Unsatisfied</p>
+          </div>
+          <div class="col-4 m-t-15">
+            <h5>9%</h5>
+            <p class="text-muted m-b-0">NA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Homework -->
+  <div class="col-xl-4 col-md-12 col-sm-12">
+    <div class="card">
+      <div class="card-header">
+        <h5>Home Work</h5>
+      </div>
+      <div class="card-block">
+        <chart id="new-user-chart" [type]="'doughnut'" [data]="newUserData" [options]="newUserOption" [style.margin-top]="'-20px'"></chart>
+      </div>
+      <div class="card-footer ">
+        <div class="row text-center b-t-default">
+          <div class="col-3 b-r-default m-t-15">
+            <h5>85%</h5>
+            <p class="text-muted m-b-0">Excellent</p>
+          </div>
+          <div class="col-3 b-r-default m-t-15">
+            <h5>16%</h5>
+            <p class="text-muted m-b-0">Good</p>
+          </div>
+          <div class="col-3 b-r-default m-t-15">
+            <h5>16%</h5>
+            <p class="text-muted m-b-0">Average</p>
+          </div>
+          <div class="col-3 m-t-15">
+            <h5>19%</h5>
+            <p class="text-muted m-b-0">Poor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
 </div>

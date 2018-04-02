@@ -10,6 +10,10 @@ const routes: Routes = [
     },
     children: [
       {
+        path: 'assignments',
+        loadChildren: './assignment/assignment.module#AssignmentModule'
+      },
+      {
         path: 'subjectdetail',
         loadChildren: './subject-detail/subject-detail.module#SubjectDetailModule'
       },

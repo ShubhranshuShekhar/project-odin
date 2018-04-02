@@ -6,23 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./subject-detail.component.css']
 })
 export class SubjectDetailComponent implements OnInit {
-  donutChartData =  {
-    chartType: 'PieChart',
-    dataTable: [
-      ['Task', 'Hours per Day'],
-      ['A - Excellent', 11],
-      ['B - Good', 2],
-      ['C - Average', 2],
-      ['D - Below Average', 2],
-      ['E - Poor', 7]
-    ],
-    options: {
-     
-      title: '',
-      pieHole: 0.4,
-      colors: ['#2ecc71', '#01C0C8', '#FB9678', '#5faee3', '#f4d03f']
-    },
-  };
+
   public newUserData: any;
   public newUserOption: any;
 
@@ -31,11 +15,11 @@ export class SubjectDetailComponent implements OnInit {
   ngOnInit() {
     this.newUserData = {
       datasets: [{
-        data: [10, 34, 15],
-        backgroundColor: ['#11c15b', '#448aff', '#ff5252'],
+        data: [10, 34, 15, 25],
+        backgroundColor: ['#11c15b', '#448aff', '#ff5252', '#CCCC00'],
         label: 'Dataset 1'
       }],
-      labels: ['Satisfied', 'Unsatisfied', 'Cool']
+      labels: ['A', 'B', 'C', 'D']
     };
     this.newUserOption = {
       responsive: true,
