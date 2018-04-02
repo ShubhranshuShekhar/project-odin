@@ -15,7 +15,7 @@ import '../../../../assets/charts/amchart/usaLow.js';
   templateUrl: './chart-widget.component.html',
   styleUrls: [
     './chart-widget.component.scss',
-    '../../../../assets/charts/radial/css/radial.scss'
+    // '../../../../assets/charts/radial/css/radial.scss'
   ],
   encapsulation: ViewEncapsulation.None
 })
@@ -206,11 +206,11 @@ export class ChartWidgetComponent implements OnInit, OnDestroy {
 
       this.newUserData = {
         datasets: [{
-          data: [10, 34, 5],
+          data: [10, 34, 15],
           backgroundColor: ['#11c15b', '#448aff', '#ff5252'],
           label: 'Dataset 1'
         }],
-        labels: ['Satisfied', 'Unsatisfied', 'NA']
+        labels: ['Satisfied', 'Unsatisfied', 'Cool']
       };
       this.newUserOption = {
         responsive: true,

@@ -4,7 +4,7 @@ import { SubjectRoutingModule } from "./subject-routing.module";
 import { SubjectComponent } from './subject.component';
 import { SharedModule } from '../../../shared/shared.module';
 import { SubjectSummaryComponent } from '../../../views/high-level/subject-summary/subject-summary.component';
-
+import { SubjectGradesComponent } from "../../../views/high-level/subject-grades/subject-grades.component";
 
 
 @NgModule({
@@ -12,12 +12,18 @@ import { SubjectSummaryComponent } from '../../../views/high-level/subject-summa
     CommonModule,
     SubjectRoutingModule,
     SharedModule,
+    
 
   ],
   declarations: [
     SubjectComponent,
-    SubjectSummaryComponent
+    SubjectSummaryComponent,
+    SubjectGradesComponent
   ],
   bootstrap: [SubjectComponent]
 })
-export class SubjectModule { }
+export class SubjectModule { 
+
+
+
+}

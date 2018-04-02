@@ -10,6 +10,10 @@ const routes: Routes = [
     },
     children: [
       {
+        path: 'subjectdetail',
+        loadChildren: './subject-detail/subject-detail.module#SubjectDetailModule'
+      },
+      {
         path: 'subject',
         loadChildren: './subject/subject.module#SubjectModule'
       },
